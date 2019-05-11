@@ -8,10 +8,17 @@
     <title>Welcome!</title>
     <style>
         body {
-            width: 100%;
-            height: 100%;
             background-color: #000;
             color: #fffafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+                "Droid Sans", "Helvetica Neue", "Helvetica", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-align: center;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
         }
 
         body h1 {
@@ -30,6 +37,22 @@
             margin: 20px;
         }
 
+        footer {
+            margin-top: 10rem;
+            position: absolute;
+        }
+
+        body a {
+            color: #f2f2f2;
+        }
+
+        body a:visited {
+            color: #f2f2f2;
+        }
+
+        body a:hover {
+            color: red;
+        }
 
         .white {
             background-color: #000;
@@ -41,7 +64,7 @@
         }
 
         #animation {
-            width: 95vw;
+            width: 98vw;
             height: 30vh;
             background: #fffafa url("https://media.giphy.com/media/12MhwQm8toOEp2/giphy.gif") repeat-y;
             animation: play 8s steps(120) infinite;
@@ -67,15 +90,32 @@
 <body>
     <div class='white'>
 
+        <h1>I had a real website, but someone stole it from me.</h1>
         <div id='animation'>
         </div>
 
         <div class='animation_text'>
-            <h1>Eu tinha feito um site a sério, mas alguém o roubou.</h2>
-            <h2>A minha sorte é que já tenho o Batman a tratar do assunto!</h3>
-            <h3>Podem contactar-me <a href='https://www.linkedin.com/in/filipedpsilva/'>por aqui</a>.</h4>
+            <h2>I'm glad I got Batman to workout this situation, though!</h2>
+            <h3>You can still contact me from <a href='https://www.linkedin.com/in/filipedpsilva/'>here</a>.</h3>
+            <h4>Other places I might be, instead of working:</h4>
+            <ul>
+                <li>
+                    <a
+                        href='mailto:filipedpsilva@protonmail.com?subject=Eu sei quem roubou o teu site Filipe!&body=Foi esta pessoa: '>E-mail</a>
+                </li>
+                <li>
+                    <a href='http://www.moshbit.pt/'>Videogame website</a>
+                </li>
+                <li>
+                    <a href='https://twitter.com/KINGodfather'>Twitter</a>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
+<footer>
+    &copy;
+    <script>new Date().getFullYear() > 2010 && document.write("" + new Date().getFullYear());</script>, Filipe Silva
+</footer>
 
 </html>
