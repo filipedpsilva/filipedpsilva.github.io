@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad6b9cb396bec58fd64d58239380a710",
+    "revision": "e0a69c6d1dc5f615fc81cbeecc21ca3e",
     "url": "/megaloja/index.html"
   },
   {
-    "revision": "3beff4f885b0fb375094",
+    "revision": "8bd4701a198e17f7b49d",
     "url": "/megaloja/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "54b546de418e8c779574",
-    "url": "/megaloja/static/css/main.2f66e001.chunk.css"
+    "revision": "20e889ad351846b76055",
+    "url": "/megaloja/static/css/main.75ad864c.chunk.css"
   },
   {
-    "revision": "3beff4f885b0fb375094",
-    "url": "/megaloja/static/js/2.dbe9cb5e.chunk.js"
+    "revision": "8bd4701a198e17f7b49d",
+    "url": "/megaloja/static/js/2.f0ec6904.chunk.js"
   },
   {
-    "revision": "54b546de418e8c779574",
-    "url": "/megaloja/static/js/main.54f32aec.chunk.js"
+    "revision": "20e889ad351846b76055",
+    "url": "/megaloja/static/js/main.27454413.chunk.js"
   },
   {
     "revision": "823360570a119cede5f2",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4c956e08041a3bd2bfe894ae8b6d9c30",
     "url": "/megaloja/static/media/about_us.4c956e08.jpg"
+  },
+  {
+    "revision": "d60e21209f7683b95933a0c44b51bcd9",
+    "url": "/megaloja/static/media/about_us_team.d60e2120.jpg"
   },
   {
     "revision": "7e538212bdc039c3c8c5d1ea3428c833",
