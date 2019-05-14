@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0a69c6d1dc5f615fc81cbeecc21ca3e",
+    "revision": "cc89e20a725df27fee7974ce97fe4b51",
     "url": "/megaloja/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/megaloja/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "20e889ad351846b76055",
+    "revision": "08a6ae79b6ce2b13ba88",
     "url": "/megaloja/static/css/main.75ad864c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/megaloja/static/js/2.f0ec6904.chunk.js"
   },
   {
-    "revision": "20e889ad351846b76055",
-    "url": "/megaloja/static/js/main.27454413.chunk.js"
+    "revision": "08a6ae79b6ce2b13ba88",
+    "url": "/megaloja/static/js/main.2a01b308.chunk.js"
   },
   {
     "revision": "823360570a119cede5f2",
