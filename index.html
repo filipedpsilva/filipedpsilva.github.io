@@ -7,18 +7,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome!</title>
     <style>
+        // -----------------------------------------------------------------------------
+        //     ▄█   ▄█▄  ▄█  ███▄▄▄▄      ▄██████▄
+        //     ███ ▄███▀ ███  ███▀▀▀██▄   ███    ███
+        //     ███▐██▀   ███▌ ███   ███   ███    █▀
+        //    ▄█████▀    ███▌ ███   ███  ▄███
+        //   ▀▀█████▄    ███▌ ███   ███ ▀▀███ ████▄
+        //     ███▐██▄   ███  ███   ███   ███    ███
+        //     ███ ▀███▄ ███  ███   ███   ███    ███
+        //     ███   ▀█▀ █▀    ▀█   █▀    ████████▀
+        //     ▀
+        // -----------------------------------------------------------------------------
+        // Copyright (c) 2019 Filipe Silva
+        // https://www.linkedin.com/in/filipedpsilva/
+        //
+        // This is part of private intellectual property owned and maintained by the
+        // copyright holders identified above.
+        //
+        // You are not allowed to access, copy, modify, share and/or distribute this
+        // file, or parts of this file, without the express written consent from its
+        // copyright holders.
+        //
+        // You are liable for any losses, direct or indirect, financial or otherwise,
+        // resulting from violation of this notice.
+        // -----------------------------------------------------------------------------
+
+        @import "./Colors";
+
         body {
-            background-color: #000;
-            color: #fffafa;
+            margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
                 "Droid Sans", "Helvetica Neue", "Helvetica", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            text-align: center;
+            background-color: #f00 !important;
+            padding-top: 90px;
         }
 
         code {
             font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+        }
+
+        .fullsize {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar-toggler {
+            border: 1px solid #fff;
+            background-color: #ff0;
+        }
+
+        .navbar-toggler-icon {
+            background: #fff url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-toggler-collapse {
+            background-color: #f00;
+            padding: 10px;
+            border-radius: 5px;
         }
 
         body h1 {
@@ -96,7 +143,8 @@
 
         <div class='animation_text'>
             <h2>It's okay though, I already got someone on the case!</h2>
-            <h3>Until I got it back, you can contact me through <a href='https://www.linkedin.com/in/filipedpsilva/'>here</a>.
+            <h3>Until I got it back, you can contact me through <a
+                    href='https://www.linkedin.com/in/filipedpsilva/'>here</a>.
             </h3>
             <h4>Other places I might be, instead of working:</h4>
             <li>
