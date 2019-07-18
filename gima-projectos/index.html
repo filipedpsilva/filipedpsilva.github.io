@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: rgb(48, 49, 51);
+        }
+
+        .construction {
+            color: white;
+            text-align: center;
+        }
+
+        .intro {
+            color: white;
+            text-align: justify;
+            width: 70%;
+        }
+
+        .gm-control-active>img {
+            box-sizing: content-box;
+            display: none;
+            left: 50%;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .gm-control-active>img:nth-child(1) {
+            display: block
+        }
+
+        .gm-control-active:hover>img:nth-child(1),
+        .gm-control-active:active>img:nth-child(1) {
+            display: none
+        }
+
+        .gm-control-active:hover>img:nth-child(2),
+        .gm-control-active:active>img:nth-child(3) {
+            display: block
+        }
+    </style>
+    <link type="text/css" rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <style>
+        .gm-ui-hover-effect {
+            opacity: .6
+        }
+
+        .gm-ui-hover-effect:hover {
+            opacity: 1
+        }
+    </style>
+    <style>
+        .gm-style .gm-style-cc span,
+        .gm-style .gm-style-cc a,
+        .gm-style .gm-style-mtc div {
+            font-size: 10px;
+            box-sizing: border-box
+        }
+    </style>
+    <style>
+        @media print {
+
+            .gm-style .gmnoprint,
+            .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+
+            .gm-style .gmnoscreen,
+            .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style>
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0, 0, 0, 0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
+    <style>
+        .gm-style img {
+            max-width: none;
+        }
+
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="FTtg3Xw8P2hyVOikJbB8eyB0V9SZHlzCqJbIezvMsjQ">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://www.gima-projectos.pt/xmlrpc.php">
+    <title>Gima Projectos, Atelier de Arquitectura e Engenharia.</title>
+
+    <!-- All in One SEO Pack 2.3.12 by Michael Torbert of Semper Fi Web Design[530,759] -->
+    <meta name="description"
+        content="Gabinete atelier prestador de serviços de Arquitectura, Engenharia e Construção - Obras Novas e Remodelações. Projetos de Reabilitação e Chave na Mão.">
+
+    <link rel="canonical" href="http://www.gima-projectos.pt/">
+    <meta property="og:title" content="GIMA Projectos - Arquitectura e Engenharia, Lda">
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="http://www.gima-projectos.pt/">
+    <meta property="og:image" content="http://www.gima-projectos.pt/wp-content/uploads/01_1GimaLogomarca.jpg">
+    <meta property="og:site_name" content="GIMA Projectos - Arquitectura e Engenharia, Lda">
+    <meta property="og:description"
+        content="Somos um gabinete pluridisciplinar de arquitectura, engenharia, design e consultoria, com grande capacidade para abordar e desenvolver todo o tipo de projectos.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GIMA Projectos - Arquitectura e Engenharia, Lda">
+    <meta name="twitter:description"
+        content="Somos um gabinete pluridisciplinar de arquitectura, engenharia, design e consultoria, com grande capacidade para abordar e desenvolver todo o tipo de projectos.">
+    <meta name="twitter:image" content="http://www.gima-projectos.pt/wp-content/uploads/01_1GimaLogomarca.jpg">
+    <meta itemprop="image" content="http://www.gima-projectos.pt/wp-content/uploads/01_1GimaLogomarca.jpg">
+    <!-- /all in one seo pack -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="alternate" type="application/rss+xml" title="GIMA Projectos - Arquitectura e Engenharia, Lda » Feed"
+        href="http://www.gima-projectos.pt/feed/">
+    <link rel="alternate" type="application/rss+xml"
+        title="GIMA Projectos - Arquitectura e Engenharia, Lda » Feed de comentários"
+        href="http://www.gima-projectos.pt/comments/feed/">
+    <link rel="alternate" type="application/rss+xml"
+        title="Feed de comentários de GIMA Projectos - Arquitectura e Engenharia, Lda » GIMA | Homepage"
+        href="http://www.gima-projectos.pt/classic-studio/feed/">
+    <script type="text/javascript">
+        window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "http:\/\/www.gima-projectos.pt\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.13" } };
+        !function (a, b, c) { function d(a) { var b, c, d, e, f = String.fromCharCode; if (!k || !k.fillText) return !1; switch (k.clearRect(0, 0, j.width, j.height), k.textBaseline = "top", k.font = "600 32px Arial", a) { case "flag": return k.fillText(f(55356, 56826, 55356, 56819), 0, 0), !(j.toDataURL().length < 3e3) && (k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 65039, 8205, 55356, 57096), 0, 0), b = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55356, 57331, 55356, 57096), 0, 0), c = j.toDataURL(), b !== c); case "emoji4": return k.fillText(f(55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0), d = j.toDataURL(), k.clearRect(0, 0, j.width, j.height), k.fillText(f(55357, 56425, 55356, 57341, 55357, 56507), 0, 0), e = j.toDataURL(), d !== e }return !1 } function e(a) { var c = b.createElement("script"); c.src = a, c.defer = c.type = "text/javascript", b.getElementsByTagName("head")[0].appendChild(c) } var f, g, h, i, j = b.createElement("canvas"), k = j.getContext && j.getContext("2d"); for (i = Array("flag", "emoji4"), c.supports = { everything: !0, everythingExceptFlag: !0 }, h = 0; h < i.length; h++)c.supports[i[h]] = d(i[h]), c.supports.everything = c.supports.everything && c.supports[i[h]], "flag" !== i[h] && (c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && c.supports[i[h]]); c.supports.everythingExceptFlag = c.supports.everythingExceptFlag && !c.supports.flag, c.DOMReady = !1, c.readyCallback = function () { c.DOMReady = !0 }, c.supports.everything || (g = function () { c.readyCallback() }, b.addEventListener ? (b.addEventListener("DOMContentLoaded", g, !1), a.addEventListener("load", g, !1)) : (a.attachEvent("onload", g), b.attachEvent("onreadystatechange", function () { "complete" === b.readyState && c.readyCallback() })), f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji), e(f.wpemoji))) }(window, document, window._wpemojiSettings);
+    </script>
+    <script src="http://www.gima-projectos.pt/wp-includes/js/wp-emoji-release.min.js?ver=4.7.13" type="text/javascript"
+        defer=""></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" id="layerslider-css"
+        href="http://www.gima-projectos.pt/wp-content/plugins/LayerSlider/static/css/layerslider.css?ver=5.6.10"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="ls-google-fonts-css"
+        href="http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&amp;subset=latin%2Clatin-ext"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="contact-form-7-css"
+        href="http://www.gima-projectos.pt/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.7"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="rs-plugin-settings-css"
+        href="http://www.gima-projectos.pt/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.2.6"
+        type="text/css" media="all">
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+
+        .tp-caption.Restaurant-Menuitem,
+        .Restaurant-Menuitem {
+            color: rgba(255, 255, 255, 1.00);
+            font-size: 17px;
+            line-height: 17px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: Roboto;
+            padding: 10px 30px 10px 30px;
+            text-decoration: none;
+            text-align: left;
+            background-color: rgba(0, 0, 0, 1.00);
+            border-color: transparent;
+            border-style: none;
+            border-width: 0px;
+            border-radius: 0px 0px 0px 0px;
+            letter-spacing: 2px
+        }
+    </style>
+    <link rel="stylesheet" id="uncode-style-css"
+        href="http://www.gima-projectos.pt/wp-content/themes/uncode/library/css/style.css?ver=1526811530"
+        type="text/css" media="all">
+    <style id="uncode-style-inline-css" type="text/css">
+        @media (min-width: 960px) {
+            .limit-width {
+                max-width: 1200px;
+                margin: auto;
+            }
+        }
+
+        @media (min-width: 960px) {
+
+            .main-header,
+            .vmenu-container {
+                width: 288px;
+            }
+        }
+
+        .menu-primary ul.menu-smart>li>a,
+        .menu-primary ul.menu-smart li.dropdown>a,
+        .menu-primary ul.menu-smart li.mega-menu>a,
+        .vmenu-container ul.menu-smart>li>a,
+        .vmenu-container ul.menu-smart li.dropdown>a {
+            text-transform: uppercase;
+        }
+    </style>
+    <link rel="stylesheet" id="uncode-custom-style-css"
+        href="http://www.gima-projectos.pt/wp-content/themes/uncode/library/css/style-custom.css?ver=1714937658"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="child-style-css"
+        href="http://www.gima-projectos.pt/wp-content/themes/uncode-child/style.css?ver=1526811530" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="uncode-icons-css"
+        href="http://www.gima-projectos.pt/wp-content/themes/uncode/library/css/uncode-icons.css?ver=1714937658"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="uncodefont-google-css"
+        href="//fonts.googleapis.com/css?family=Poppins%3A300%2Cregular%2C500%2C600%2C700%7CHind%3A300%2Cregular%2C500%2C600%2C700%7CDroid+Serif%3Aregular%2Citalic%2C700%2C700italic%7CDosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800%7CPlayfair+Display%3Aregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7COswald%3A300%2Cregular%2C700%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7CSource+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CRaleway%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;subset=devanagari%2Clatin-ext%2Clatin%2Ccyrillic%2Cvietnamese%2Cgreek%2Ccyrillic-ext%2Cgreek-ext&amp;ver=1.0.0"
+        type="text/css" media="all">
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/plugins/LayerSlider/static/js/greensock.js?ver=1.11.8"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var LS_Meta = { "v": "5.6.10" };
+    /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/plugins/LayerSlider/static/js/layerslider.kreaturamedia.jquery.js?ver=5.6.10"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/plugins/LayerSlider/static/js/layerslider.transitions.js?ver=5.6.10"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.2.6"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.2.6"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var SiteParameters = { "site_url": "http:\/\/www.gima-projectos.pt\/", "theme_directory": "http:\/\/www.gima-projectos.pt\/wp-content\/themes\/uncode", "admin_ajax": "http:\/\/www.gima-projectos.pt\/wp-admin\/admin-ajax.php", "uncode_ajax": "http:\/\/www.gima-projectos.pt\/wp-content\/themes\/uncode\/core\/inc\/uncode-ajax.php", "days": "days", "hours": "hours", "minutes": "minutes", "seconds": "seconds" };
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="/wp-content/themes/uncode/library/js/min/ai-uncode.min.js" id="uncodeAI"
+        data-home="/" data-path="/" data-breakpoints-images="258,516,720,1032,1440,2064,2880"></script>
+    <script type="text/javascript"
+        src="http://www.gima-projectos.pt/wp-content/themes/uncode/library/js/init.js?ver=1714937658"></script>
+    <meta name="generator"
+        content="Powered by LayerSlider 5.6.10 - Multi-Purpose, Responsive, Parallax, Mobile-Friendly Slider Plugin for WordPress.">
+    <!-- LayerSlider updates and docs at: https://kreaturamedia.com/layerslider-responsive-wordpress-slider-plugin/ -->
+    <link rel="https://api.w.org/" href="http://www.gima-projectos.pt/wp-json/">
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.gima-projectos.pt/xmlrpc.php?rsd">
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="http://www.gima-projectos.pt/wp-includes/wlwmanifest.xml">
+    <meta name="generator" content="WordPress 4.7.13">
+    <link rel="shortlink" href="http://www.gima-projectos.pt/">
+    <link rel="alternate" type="application/json+oembed"
+        href="http://www.gima-projectos.pt/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.gima-projectos.pt%2F">
+    <link rel="alternate" type="text/xml+oembed"
+        href="http://www.gima-projectos.pt/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.gima-projectos.pt%2F&amp;format=xml">
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.gima-projectos.pt/wp-content/plugins/uncode-js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+    <!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.gima-projectos.pt/wp-content/plugins/uncode-js_composer/assets/css/vc-ie8.min.css" media="screen"><![endif]-->
+    <meta name="generator"
+        content="Powered by Slider Revolution 5.2.6 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+    <link rel="icon" href="http://www.gima-projectos.pt/wp-content/uploads/cropped-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="http://www.gima-projectos.pt/wp-content/uploads/cropped-favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon-precomposed"
+        href="http://www.gima-projectos.pt/wp-content/uploads/cropped-favicon-180x180.png">
+    <meta name="msapplication-TileImage"
+        content="http://www.gima-projectos.pt/wp-content/uploads/cropped-favicon-270x270.png">
+    <noscript>
+        <style type="text/css">
+            .wpb_animate_when_almost_visible {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/common.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/util.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/map.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/marker.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/onion.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/stats.js"></script>
+    <script type="text/javascript" charset="UTF-8"
+        src="http://maps.googleapis.com/maps-api-v3/api/js/37/8a/intl/pt_ALL/controls.js"></script>
+</head>
+
+<body>
+
+    <div class='construction'>
+        <h2>
+            O nosso site irá voltar à normalidade o mais brevemente possível. Entretanto, pode consultar os nossos
+            contactos abaixo.
+        </h2>
+    </div>
+
+    <div data-parent="true" class="row-container boomapps_vcrow" data-section="21">
+        <div class="row unequal col-no-gutter no-top-padding no-bottom-padding no-h-padding full-width row-parent"
+            data-imgready="true">
+            <div class="row-inner">
+                <div
+                    class="pos-top pos-center align_left column_parent col-lg-4 boomapps_vccolumn single-internal-gutter">
+                    <div class="uncol style-light">
+                        <div class="uncoltable">
+                            <div class="uncell  boomapps_vccolumn no-block-padding">
+                                <div class="uncont">
+                                    <div class="uncode-gmaps-widget ">
+                                        <div class="uncode-wrapper">
+                                            <div id="gmapMhBhMo" class="uncode-map-wrapper" data-draggable="true"
+                                                data-zoom="16" data-color="#303133" data-ui="#34a344"
+                                                data-lat="38.734905" data-lon="-9.123560" data-saturation="-20"
+                                                data-brightness="5"
+                                                style="height: 600px; position: relative; overflow: hidden;">
+                                                <div
+                                                    style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                                    <div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;"
+                                                        class="gm-style">
+                                                        <div style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;http://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: pan-x pan-y;"
+                                                            tabindex="0">
+                                                            <div
+                                                                style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);">
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                        <div
+                                                                            style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -27, -122);">
+                                                                            <div
+                                                                                style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                            <div
+                                                                                style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+                                                                                <div
+                                                                                    style="width: 256px; height: 256px;">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;">
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: -1;">
+                                                                        <div
+                                                                            style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -27, -122);">
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 0px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: -256px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: -256px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: -256px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 0px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 256px; top: 256px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;">
+                                                                            </div>
+                                                                            <div
+                                                                                style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: -256px; top: 256px;">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        style="width: 32px; height: 48px; position: absolute; left: -16px; top: -47px; z-index: 0;">
+                                                                        <canvas width="32" height="48"
+                                                                            style="width: 32px; height: 48px; position: absolute; left: 0px; top: 0px; user-select: none;"
+                                                                            draggable="false"></canvas></div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                                                                    <div
+                                                                        style="position: absolute; z-index: 984; transform: matrix(1, 0, 0, 1, -27, -122);">
+                                                                        <div
+                                                                            style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31107!3i25108!4i256!2m3!1e0!2sm!3i474184424!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=102333">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31106!3i25107!4i256!2m3!1e0!2sm!3i474184400!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=24219">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31106!3i25108!4i256!2m3!1e0!2sm!3i474184424!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=57595">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 256px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31108!3i25107!4i256!2m3!1e0!2sm!3i474184400!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=113695">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31108!3i25108!4i256!2m3!1e0!2sm!3i474184400!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=18361">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 0px; top: -256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31107!3i25107!4i256!2m3!1e0!2sm!3i474184328!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=73719">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31108!3i25109!4i256!2m3!1e0!2sm!3i474184448!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=49376">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31107!3i25109!4i256!2m3!1e0!2sm!3i474184424!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=6999">
+                                                                        </div>
+                                                                        <div
+                                                                            style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px; transition: opacity 200ms linear 0s;">
+                                                                            <img style="width: 256px; height: 256px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                draggable="false" alt=""
+                                                                                role="presentation"
+                                                                                src="http://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i31106!3i25109!4i256!2m3!1e0!2sm!3i474184424!3m14!2spt!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!12m4!1e26!2m2!1sstyles!2zcy5lOmx8cC5zOi0yMCxzLnQ6MnxzLmU6bHxwLnY6b2ZmLHMudDozfHMuZTpsLml8cC52Om9mZixzLnQ6NDl8cy5lOmx8cC52Om9mZixzLnQ6NTF8cy5lOmwuaXxwLnY6b2ZmLHMudDo1MHxzLmU6bC5pfHAudjpvZmYscy50OjN8cy5lOmcuc3xwLnY6b2ZmLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDoyfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDozNHxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6Mzd8cy5lOmcuZnxwLmg6IzMwMzEzM3xwLnY6b2ZmfHAubDo1fHAuczotMjAscy50OjMzfHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo0fHMuZTpnLmZ8cC5oOiMzMDMxMzN8cC52Om9mZnxwLmw6NXxwLnM6LTIwLHMudDo2NnxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvZmZ8cC5sOjV8cC5zOi0yMCxzLnQ6NjZ8cC52Om9mZixzLnQ6NXxwLmg6IzMwMzEzM3xwLnY6b258cC5sOjV8cC5zOi0yMCxzLnQ6M3xzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6NXxwLnM6LTIwLHMudDo0OXxzLmU6Zy5mfHAuaDojMzAzMTMzfHAudjpvbnxwLmw6MTAwfHAuczotMjAscy50OjY1fHMuZTpsfHAudjpvZmYscy50OjZ8cy5lOmd8cC5oOiMzMDMxMzN8cC52Om9ufHAubDo1fHAuczotMjA!4e0&amp;key=AIzaSyCVb6HWcptOxwCoHy0jV51WiMjBmnyDNvU&amp;token=93332">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;"
+                                                                class="gm-style-pbc">
+                                                                <p class="gm-style-pbt"></p>
+                                                            </div>
+                                                            <div
+                                                                style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                                                                <div
+                                                                    style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px);">
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;">
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
+                                                                        <div style="width: 32px; height: 48px; overflow: hidden; position: absolute; opacity: 0; cursor: pointer; touch-action: none; left: -16px; top: -47px; z-index: 0;"
+                                                                            title="spot"><img
+                                                                                style="position: absolute; left: 0px; top: 0px; width: 32px; height: 48px; user-select: none; border: 0px none; padding: 0px; margin: 0px; max-width: none;"
+                                                                                alt=""
+                                                                                src="http://maps.gstatic.com/mapfiles/transparent.png"
+                                                                                draggable="false"></div>
+                                                                    </div>
+                                                                    <div
+                                                                        style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><iframe aria-hidden="true"
+                                                            style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: medium none;"
+                                                            src="about:blank" frameborder="0"></iframe>
+                                                        <div
+                                                            style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
+                                                            <a style="position: static; overflow: visible; float: none; display: inline;"
+                                                                target="_blank" rel="noopener"
+                                                                href="https://maps.google.com/maps?ll=38.734905,-9.12356&amp;z=16&amp;t=m&amp;hl=pt&amp;gl=US&amp;mapclient=apiv3"
+                                                                title="Abrir esta área no Google Maps (abre uma nova janela)">
+                                                                <div
+                                                                    style="width: 66px; height: 26px; cursor: pointer;">
+                                                                    <img style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px none; padding: 0px; margin: 0px;"
+                                                                        alt=""
+                                                                        src="http://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"
+                                                                        draggable="false"></div>
+                                                            </a></div>
+                                                        <div
+                                                            style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 122px; top: 210px;">
+                                                            <div
+                                                                style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">
+                                                                Dados do mapa</div>
+                                                            <div style="font-size: 13px;">Dados do mapa ©2019 Google,
+                                                                Inst. Geogr. Nacional</div><button
+                                                                style="background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"
+                                                                draggable="false" title="Fechar" aria-label="Fechar"
+                                                                type="button" class="gm-ui-hover-effect"><img
+                                                                    src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                                                                    style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button>
+                                                        </div>
+                                                        <div class="gmnoprint"
+                                                            style="z-index: 1000001; position: absolute; right: 191px; bottom: 0px; width: 246px;">
+                                                            <div draggable="false"
+                                                                style="user-select: none; height: 14px; line-height: 14px;"
+                                                                class="gm-style-cc">
+                                                                <div
+                                                                    style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                    <div style="width: 1px;"></div>
+                                                                    <div
+                                                                        style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                                    <a
+                                                                        style="text-decoration: none; cursor: pointer; display: none;">Dados
+                                                                        do mapa</a><span>Dados do mapa ©2019 Google,
+                                                                        Inst. Geogr. Nacional</span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="gmnoscreen"
+                                                            style="position: absolute; right: 0px; bottom: 0px;">
+                                                            <div
+                                                                style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
+                                                                Dados do mapa ©2019 Google, Inst. Geogr. Nacional</div>
+                                                        </div>
+                                                        <div class="gmnoprint gm-style-cc"
+                                                            style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 112px; bottom: 0px;"
+                                                            draggable="false">
+                                                            <div
+                                                                style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div
+                                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                                <a style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);"
+                                                                    href="https://www.google.com/intl/pt_US/help/terms_maps.html"
+                                                                    target="_blank" rel="noopener">Termos de Uso</a>
+                                                            </div>
+                                                        </div><button
+                                                            style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 0px none; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;"
+                                                            draggable="false"
+                                                            title="Ativar a visualização em tela cheia"
+                                                            aria-label="Ativar a visualização em tela cheia"
+                                                            type="button"
+                                                            class="gm-control-active gm-fullscreen-control"><img
+                                                                style="height: 18px; width: 18px;"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                style="height: 18px; width: 18px;"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                style="height: 18px; width: 18px;"
+                                                                src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button>
+                                                        <div
+                                                            style="z-index: 0; position: absolute; top: 0px; left: 0px;">
+                                                            <div id="gmapMhBhMo-zoom-in"
+                                                                class="gmap-buttons gmap-zoom-min btn style-accent-bg">
+                                                                <i class="fa fa-plus"></i></div>
+                                                            <div id="gmapMhBhMo-zoom-out"
+                                                                class="gmap-buttons gmap-zoom-out btn style-accent-bg">
+                                                                <i class="fa fa-minus"></i></div>
+                                                        </div>
+                                                        <div draggable="false"
+                                                            style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;"
+                                                            class="gm-style-cc">
+                                                            <div
+                                                                style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                                                                <div style="width: 1px;"></div>
+                                                                <div
+                                                                    style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;">
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                                                                <a target="_blank" rel="noopener"
+                                                                    title="Informar erros no mapa ou nas imagens para o Google"
+                                                                    style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;"
+                                                                    href="https://www.google.com/maps/@38.734905,-9.12356,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3">Informar
+                                                                    erro no mapa</a></div>
+                                                        </div>
+                                                        <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+                                                            style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;"
+                                                            draggable="false" controlwidth="0" controlheight="0">
+                                                            <div class="gmnoprint" controlwidth="40" controlheight="40"
+                                                                style="display: none; position: absolute;">
+                                                                <div style="width: 40px; height: 40px;"><button
+                                                                        style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none; border: 0px none; margin: 0px 0px 32px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"
+                                                                        draggable="false"
+                                                                        title="Girar o mapa em 90 graus"
+                                                                        aria-label="Girar o mapa em 90 graus"
+                                                                        type="button" class="gm-control-active"><img
+                                                                            style="height: 18px; width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                            style="height: 18px; width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                            style="height: 18px; width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2022%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20fill-rule%3D%22evenodd%22%20d%3D%22M20%2010c0-5.52-4.48-10-10-10s-10%204.48-10%2010v5h5v-5c0-2.76%202.24-5%205-5s5%202.24%205%205v5h-4l6.5%207%206.5-7h-4v-5z%22%20clip-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button><button
+                                                                        style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: block; border: 0px none; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none; width: 40px; height: 40px; top: 0px; left: 0px; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px;"
+                                                                        draggable="false" title="Inclinar o mapa"
+                                                                        aria-label="Inclinar o mapa" type="button"
+                                                                        class="gm-tilt gm-control-active"><img
+                                                                            style="width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                            style="width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"><img
+                                                                            style="width: 18px;"
+                                                                            src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218px%22%20height%3D%2216px%22%20viewBox%3D%220%200%2018%2016%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C16h8V9H0V16z%20M10%2C16h8V9h-8V16z%20M0%2C7h8V0H0V7z%20M10%2C0v7h8V0H10z%22%2F%3E%0A%3C%2Fsvg%3E%0A"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class='intro'>
+                        <h4>
+                            A GIMA Projectos presta serviços de Arquitectura, Engenharia e Construção.
+                            Está em actividade desde 2003 com atelier de arquitectura em Lisboa. José Possidónio,
+                            Arquitecto Fundador,
+                            permanece à frente da empresa como CEO e líder de projecto.
+                        </h4>
+                    </div>
+                    <div
+                        class="pos-top pos-center align_left column_parent col-lg-4 boomapps_vccolumn single-internal-gutter">
+                        <div class="uncol style-dark animate_when_almost_visible alpha-anim start_animation">
+                            <div class="uncoltable">
+                                <div class="uncell  boomapps_vccolumn double-block-padding style-color-prif-bg">
+                                    <div class="uncont">
+                                        <div class="heading-text el-text">
+                                            <h3 class="h3 font-weight-700 text-uppercase"><span>Lisboa, Portugal</span>
+                                            </h3>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="divider-wrapper ">
+                                            <hr class="border-accent-color separator-no-padding">
+                                        </div>
+                                        <div class="uncode_text_column">
+                                            <p><strong>GIMA Projectos</strong> – Arquitectura e Engenharia, Lda.</p>
+                                            <p>ARQCOOP<br>
+                                                Rua Almirante Sarmento Rodrigues<br>
+                                                Lote 7 – Olaias<br>
+                                                1900-882 Lisboa</p>
+                                            <p><span style="color: #34a344;">E-mail:&nbsp;</span> <a
+                                                    href="mailto:gimaprojectos@gmail.com">gimaprojectos@gmail.com</a><br>
+                                                <span style="color: #34a344;">Tlf:</span>&nbsp; (+351) 210 107 848<br>
+                                                <span style="color: #34a344;">Tm:</span>&nbsp; (+351) 915 875 089</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="pos-top pos-center align_left column_parent col-lg-4 boomapps_vccolumn single-internal-gutter">
+                        <div class="uncol style-dark animate_when_almost_visible alpha-anim start_animation">
+                            <div class="uncoltable">
+                                <div class="uncell  boomapps_vccolumn double-block-padding style-color-prif-bg">
+                                    <div class="uncont">
+                                        <div class="heading-text el-text">
+                                            <h3 class="h3 font-weight-700 text-uppercase"><span>Internacional</span>
+                                            </h3>
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="divider-wrapper ">
+                                            <hr class="border-accent-color separator-no-padding">
+                                        </div>
+                                        <div class="uncode_text_column">
+                                            <p><strong>MAPUTO, MOÇAMBIQUE<br>
+                                                </strong></p>
+                                            <p><span style="color: #34a344;">E-mail:&nbsp;</span> <a
+                                                    href="mailto:gimaprojectos@gmail.com">gimaprojectos@gmail.com</a><br>
+                                                <span style="color: #34a344;">E-mail:&nbsp;</span> <a
+                                                    href="mailto:jpossidonioconsult@gmail.com">jpossidonioconsult@gmail.com</a><br>
+                                                <span style="color: #34a344;">Tm:</span>&nbsp; (+351) 91 995 91 87<br>
+                                                <span style="color: #34a344;">Tm:</span>&nbsp; (+258) 84 622 0103</p>
+                                        </div>
+                                        <div class="uncode_text_column">
+                                            <p><strong>ANGOLA<br>
+                                                </strong></p>
+                                            <p><span style="color: #34a344;">E-mail:&nbsp;</span> <a
+                                                    href="mailto:gimaprojectos@gmail.com">gimaprojectos@gmail.com</a><br>
+                                                <span style="color: #34a344;">Tlf:</span>&nbsp; (+351) 21 822 37 16</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script id="script-161464"
+                        type="text/javascript">UNCODE.initRow(document.getElementById("script-161464"));</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <style>
+        footer {
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+    © 2019 GIMA Projectos
+    Arquitectura e Engenharia, Lda
+    Todos os direitos reservados.
+
+</footer>
+
+</html>
