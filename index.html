@@ -51,18 +51,18 @@
         color: red;
       }
 
-      .link_list {
+      #link-list {
         list-style-type: none;
         width: 200px;
         margin: auto;
       }
 
-      .link_list li:hover {
+      #link-list li:hover {
         background: #ff0000 url("./src/favicon.ico") 0 3px no-repeat;
         cursor: pointer;
       }
 
-      .link_list li a:hover {
+      #link-list li a:hover {
         color: black;
       }
 
@@ -102,7 +102,7 @@
     </style>
     <script>
       //#region Links List
-      let linkList = [
+      const linkList = [
         {
           href:
             "mailto:filipedpsilva@protonmail.com?subject=I know who stole your site Filipe!&body=It was: ",
@@ -129,21 +129,26 @@
           text: "Nintendo Friend Code",
         },
       ];
-      //#endregion Games List
+      //#endregion Links List
 
       //#region Script
 
-      let linkListDiv = document.querySelector(".link_list");
+      let linkListElement = document.querySelector("#link-list");
 
-      linkListDiv.innerHTML = linkList
+      linkListElement.innerHTML = linkList
         .map(function (linkList) {
           return (
             "<li>" +
-            `<a target='_blank' rel='noopener noreferrer' href=${linkList.href}>${linkList.text}</a>` +
+            "<a target='_blank' rel='noopener noreferrer' href='" +
+            linkList.href +
+            "'>" +
+            linkList.text +
+            "</a>" +
             "</li>"
           );
         })
         .join("");
+
       //#endregion Script
     </script>
   </head>
@@ -164,7 +169,7 @@
 
         <h4>Other places I might be, instead of working:</h4>
 
-        <div class="link_list"></div>
+        <div id="link-list"></div>
       </div>
 
       <div class="footer">
