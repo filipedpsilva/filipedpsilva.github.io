@@ -1,0 +1,9 @@
+{
+  "name": "filipedpsilva.github.io",
+  "version": "0.0.0",
+  "scripts": {
+    "deploy" : "sh ./deploy.sh"
+  },
+  "private": true,
+  "license": "MIT"
+}
