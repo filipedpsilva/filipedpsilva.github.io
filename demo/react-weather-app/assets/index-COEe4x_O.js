@@ -59,7 +59,7 @@ attempted value: ${s}
     margin: 2rem;
     flex-direction: column;
     min-height: 20vh;
-    width: 80vw;
+    /* width: 80vw; */
     border-radius: 16px;
     backdrop-filter: blur(20px);
     background-color: #777777;
@@ -117,7 +117,7 @@ attempted value: ${s}
     display: flex;
     margin: 2rem;
     flex-direction: column;
-    width: 80vw;
+    /* width: 80vw; */
     border-radius: 16px;
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.25);
